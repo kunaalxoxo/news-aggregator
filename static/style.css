@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 1.1em;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 12px 24px;
+    background: #e0e0e0;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #d0d0d0;
+}
+
+button.active {
+    background: #667eea;
+    color: white;
+}
+
+.refresh-btn {
+    margin-left: auto;
+    background: #2ecc71;
+    color: white;
+}
+
+.refresh-btn:hover {
+    background: #27ae60;
+}
+
+.search-box {
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.loading {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+    font-size: 1.2em;
+}
+
+#newsContainer {
+    display: grid;
+    gap: 15px;
+}
+
+.news-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+    transition: all 0.3s;
+}
+
+.news-item:hover {
+    background: #f0f0f0;
+    transform: translateX(5px);
+}
+
+.news-title {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+}
+
+.news-title:hover {
+    color: #667eea;
+}
+
+.news-source {
+    display: inline-block;
+    padding: 5px 12px;
+    background: #667eea;
+    color: white;
+    border-radius: 3px;
+    font-size: 0.85em;
+}
+
+.last-update {
+    text-align: center;
+    margin-top: 30px;
+    color: #999;
+    font-size: 0.9em;
+}
+
+.no-results {
+    text-align: center;
+    padding: 40px;
+    color: #999;
+}
